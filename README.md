@@ -41,147 +41,118 @@ git clone https://github.com/1972nollus/fy-tube-downloader.git
 cd fy-tube-downloader
 pip install -r requirements.txt
 python fy-tube-downloader.py
+```
 📦 Requirements
 The application requires the following Python packages:
-
-customtkinter>=5.2.0
-
-yt-dlp>=2023.11.16
-
-pillow>=10.0.0
-
-Install all dependencies automatically:
-
-bash
-Code kopiëren
+- customtkinter>=5.2.0
+- yt-dlp>=2023.11.16
+- pillow>=10.0.0
+And manual install :
+- ffmpeg ( for windows download and set path to /fy-tube-downloader : https://ffmpeg.org/download.html )
+- put ffmeg.exe in /fy-tube-downloader folder 
+📦Install all dependencies automatically:
+```bash
 pip install -r requirements.txt
+``` 
 🛠️ Building from Source
-For Development
-Follow the "Build from Source" steps above
 
-Make sure you have FFmpeg installed on your system
+Make sure you have FFmpeg installed on your system !
 
 Run:
-
-bash
-Code kopiëren
+```bash
 python fy-tube-downloader.py
+``` 
 Creating Standalone Executable
 Install PyInstaller:
 
-bash
-Code kopiëren
+````bash
 pip install pyinstaller
+````
 Build the executable:
-
-bash
-Code kopiëren
+```bash
 pyinstaller --onefile --windowed --add-data "ffmpeg.exe;." --icon=logo.ico fy-tube-downloader.py
+```
+
 Find the executable in the dist/ folder
 
 🎯 How to Use
-Basic Download
-Paste YouTube URL in the main input field
-
-Select Format – MP3 (compressed) or WAV (lossless)
-
-Choose Quality – 128kbps to 320kbps
-
-Set Download Folder – default is your Music folder
-
-Click "Download Audio"
-
-Search & Download
-Click "Search songs on YouTube"
-
-Enter search term in the search panel
-
-Browse results and click "Copy" on any video
-
-The URL is auto-filled in the downloader
-
-Proceed with download
+      Basic Download :
+      - Paste YouTube URL in the main input field
+      And
+      - Select Format – MP3 (compressed) or WAV (lossless)
+      - Choose Quality – 128kbps to 320kbps
+      - Set Download Folder – default is your Music folder
+      - Click "Download Audio"
+    
+🎯 Search & Download
+      - Click "Search songs on YouTube"
+      - Enter search term in the search panel
+      - Browse results and click "Copy" on any video. Search window closes automaticly 
+      - The URL is auto-filled in the downloader
+      - CLick "Download Audio"
 
 📁 File Structure
-pgsql
-Code kopiëren
-youtube-audio-downloader/
+````bash
+fy-tube-downloader/
 ├── fy-tube-downloader.py   # Main application script
 ├── requirements.txt        # Python dependencies
-├── ffmpeg.exe              # FFmpeg binary (for audio conversion)
+├── ffmpeg.exe              # FFmpeg binary (for audio conversion) - put the exe manually in the folder.
 ├── logo.png                # Application logo
 ├── README.md               # This file
 └── build/                  # Build directory (if building)
+````
 🔧 Technical Details
-GUI Framework: CustomTkinter
-
-YouTube Integration: yt-dlp
-
-Audio Processing: FFmpeg
-
-Threading: Background downloads with real-time UI updates
-
-Packaging: PyInstaller
+  - GUI Framework: CustomTkinter
+  - YouTube Integration: yt-dlp
+  - Audio Processing: FFmpeg
+  - Threading: Background downloads with real-time UI updates
+  - Packaging: PyInstaller
 
 ⚠️ Legal Notice
-This software is intended for:
-
-Downloading content you have the rights to
-
-Personal use and archival purposes
-
-Educational and development purposes
+  - This software is intended for:
+  - Downloading content you have the rights to
+  - Personal use and archival purposes
+  - Educational and development purposes
 
 👉 Please respect copyright laws and YouTube's Terms of Service.
-Users are responsible for ensuring they have permission to download any content.
+  -Users are responsible for ensuring they have permission to download any content.
 
 🐛 Troubleshooting
-"FFmpeg not found" error
-Ensure ffmpeg.exe is in the same directory as the executable.
-For source version, install FFmpeg system-wide.
+  "FFmpeg not found" error :
+  - Ensure ffmpeg.exe is in the same directory as the executable.
+  - For source version, install FFmpeg system-wide.
 
-Download fails
+  Download fails :
+  - Check your internet connection
+  - Verify the YouTube URL is valid
+  - Try a different video (some may have restrictions)
 
-Check your internet connection
-
-Verify the YouTube URL is valid
-
-Try a different video (some may have restrictions)
-
-Application crashes
-
-Ensure you have the latest version
-
-Check Windows Event Viewer for error logs
-
+  Application crashes
+  - Check Windows Event Viewer for error logs
+  - 
 🤝 Contributing
-Contributions are welcome!
+  - Contributions are welcome!
 
 Fork the repository
 
 Create your feature branch
-
-bash
-Code kopiëren
+```bash
 git checkout -b feature/AmazingFeature
+```
 Commit your changes
-
-bash
-Code kopiëren
+```bash
 git commit -m "Add some AmazingFeature"
+```
 Push to the branch
-
-bash
-Code kopiëren
+```bash
 git push origin feature/AmazingFeature
+```
 Open a Pull Request
 
 📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
+- This project is licensed under the MIT License – see the LICENSE file for details.
 
 🙏 Acknowledgments
-yt-dlp – YouTube video downloader
-
-CustomTkinter – Modern UI components
-
-FFmpeg – Audio/video processing
+  - yt-dlp – YouTube video downloader
+  - CustomTkinter – Modern UI components
+  - FFmpeg – Audio/video processing
