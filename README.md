@@ -37,10 +37,10 @@ Built with **Python** and **CustomTkinter** for a sleek, dark-themed interface.
 
 **Installation Steps**
 ```bash
-git clone https://github.com/yourusername/youtube-audio-downloader.git
-cd youtube-audio-downloader
+git clone https://github.com/1972nollus/fy-tube-downloader.git
+cd fy-tube-downloader
 pip install -r requirements.txt
-python youtube_downloader.py
+python fy-tube-downloader.py
 📦 Requirements
 The application requires the following Python packages:
 
@@ -65,7 +65,7 @@ Run:
 
 bash
 Code kopiëren
-python youtube_downloader.py
+python fy-tube-downloader.py
 Creating Standalone Executable
 Install PyInstaller:
 
@@ -76,7 +76,7 @@ Build the executable:
 
 bash
 Code kopiëren
-pyinstaller --onefile --windowed --add-data "ffmpeg.exe;." --icon=logo.ico youtube_downloader.py
+pyinstaller --onefile --windowed --add-data "ffmpeg.exe;." --icon=logo.ico fy-tube-downloader.py
 Find the executable in the dist/ folder
 
 🎯 How to Use
@@ -106,7 +106,7 @@ Proceed with download
 pgsql
 Code kopiëren
 youtube-audio-downloader/
-├── youtube_downloader.py   # Main application script
+├── fy-tube-downloader.py   # Main application script
 ├── requirements.txt        # Python dependencies
 ├── ffmpeg.exe              # FFmpeg binary (for audio conversion)
 ├── logo.png                # Application logo
