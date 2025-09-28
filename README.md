@@ -25,7 +25,7 @@ Built with **Python** and **CustomTkinter** for a sleek, dark-themed interface.
 ## 🚀 Quick Start
 
 ### Download Pre-built Executable
-1. Go to the [Releases page](https://github.com/yourusername/youtube-audio-downloader/releases)  
+1. Go to the [Releases page](https://github.com/1972nollus/fy-tube-downloader/releases/tag/v1.0.0)
 2. Download the latest `YouTubeAudioDownloaderPro.exe`  
 3. Run the executable – no installation required!  
 
